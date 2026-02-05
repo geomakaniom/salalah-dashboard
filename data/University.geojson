@@ -1,0 +1,10 @@
+{
+  "type" : "FeatureCollection",
+  "crs" : {
+    "type" : "name",
+    "properties" : {
+      "name" : "EPSG:32640"
+    }
+  },
+  "features" : [{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[196239.13590000011,1891703.4957999997]},"properties":{"OBJECTID":1,"Asset_ID":"U1","Name":"Dhofar University","District_ID":"Salalah Wellfield","Gov_ID":"2","Wlyt_ID":"Salalah","Road_ID":"100530","Latitude":17.08966478,"Longitude":54.145471389999997,"GlobalID":"{2A7C1908-B55C-43D7-9B6F-8F01EBECA761}"}}]
+}

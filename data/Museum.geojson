@@ -1,0 +1,10 @@
+{
+  "type" : "FeatureCollection",
+  "crs" : {
+    "type" : "name",
+    "properties" : {
+      "name" : "EPSG:32640"
+    }
+  },
+  "features" : [{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[195063.26499999966,1882826.4365999997]},"properties":{"OBJECTID":1,"Asset_ID":"Mus1","Name":"Museum of the Frankincense Land","District_ID":"al Baleed","Gov_ID":"2","Wlyt_ID":"Salalah","Road_ID":"100002","Latitude":17.009407169999999,"Longitude":54.136070019999998,"GlobalID":"{65A9A98F-36C1-424A-8507-9A7E18A2FAAF}"}}]
+}
