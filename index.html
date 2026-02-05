@@ -34,8 +34,8 @@
     --accent2: #84A2B0;
     --muted-weak: #B6C5CB;
 
-    --processed: linear-gradient(135deg, #2F7594 0%, #84A2B0 100%);
-    --remaining: linear-gradient(135deg, #84A2B0 0%, #B6C5CB 100%);
+    --processed: #2F7594;
+    --remaining: #6E7071;
     --outline: rgba(47, 117, 148, 0.25);
 
     --fs: clamp(16px, 1.2vw + 12px, 22px);
@@ -755,7 +755,7 @@ const areaChart = new Chart(document.getElementById('areaChart').getContext('2d'
   data:{ labels:['Processed km²','Remaining km²'], datasets:[{ data:[0,0],
     backgroundColor:[
       '#2F7594',
-      '#84A2B0'
+      '#6E7071'
     ], borderWidth:0 }] },
   options:{ maintainAspectRatio:false, cutout:'38%', plugins:{ legend:{ position:'bottom' },
     datalabels:{ color:'#fff', font:{ weight:'1000', size:16 }, formatter:v => (typeof v==='number'? v.toFixed(2)+' km²':v) } } }
@@ -1046,7 +1046,7 @@ function buildLayerDock(manifest, layerIds){
       }
       mapProgress.addSource('processed', { type:'geojson', data:processedForRight });
       mapProgress.addLayer({ id:'processed', type:'fill', source:'processed',
-        paint:{ 'fill-color':'#71b084', 'fill-opacity':0.45, 'fill-outline-color':'#94a3b8' },
+        paint:{ 'fill-color':'#2F7594', 'fill-opacity':0.45, 'fill-outline-color':'#DADADA' },
         layout: { 'visibility': 'visible' }});
       console.log('✅ Processed layer added to right map - visibility:', mapProgress.getLayoutProperty('processed', 'visibility'));
     } catch (e) {
@@ -1082,7 +1082,7 @@ function buildLayerDock(manifest, layerIds){
         }
         mapProgress.addSource('remaining', { type:'geojson', data:remainingForRight });
         mapProgress.addLayer({ id:'remaining', type:'fill', source:'remaining',
-          paint:{ 'fill-color':'#bca3c2', 'fill-opacity':0.40, 'fill-outline-color':'#94a3b8' },
+          paint:{ 'fill-color':'#6E7071', 'fill-opacity':0.40, 'fill-outline-color':'#DADADA' },
           layout: { 'visibility': 'visible' }});
         console.log('✅ Remaining layer added to right map - visibility:', mapProgress.getLayoutProperty('remaining', 'visibility'));
         console.log('✅ Remaining source exists:', mapProgress.getSource('remaining') ? 'YES' : 'NO');
